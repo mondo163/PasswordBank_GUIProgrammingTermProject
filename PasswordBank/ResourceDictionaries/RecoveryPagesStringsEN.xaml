@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="enterEmailAssociatedString">Enter Email Associated with the Account:</system:String>
+    <system:String x:Key="enterUsernameAssociatedString">Enter Username Associated with the Account:</system:String>
+    <system:String x:Key="enterPasswordAssociatedString">Enter Password Associated with the Account:</system:String>
+    <system:String x:Key="answersSecurityString">Answers to Both Security Questions:</system:String>
+    <system:String x:Key="submitButtonString">_Submit</system:String>
+    <system:String x:Key="enterButtonString">_Enter</system:String>
+    <system:String x:Key="usernameString">Username:</system:String>
+    <system:String x:Key="passwordString">Password:</system:String>
+    <system:String x:Key="newPasskeyString">New Passkey:</system:String>
+</ResourceDictionary>

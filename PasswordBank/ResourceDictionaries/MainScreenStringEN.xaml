@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="strFile">_File</system:String>
+    <system:String x:Key="strHelp">_Help</system:String>
+    <system:String x:Key="strCreateAccount">_Create Account</system:String>
+    <system:String x:Key="strEnterUsername">Enter Username:</system:String>
+    <system:String x:Key="strEnterPassword">Enter Password:</system:String>
+    <system:String x:Key="strEnterPasskey">Enter Passkey:</system:String>
+    <system:String x:Key="strRecover">Recover:</system:String>
+    <system:String x:Key="strUsernameButton">_Username</system:String>
+    <system:String x:Key="strPasswordButton">_Password</system:String>
+    <system:String x:Key="strPasskeyButton">Pass_key</system:String>
+    <system:String x:Key="strPassword">Password</system:String>
+    <system:String x:Key="strBank">Bank</system:String>
+    <system:String x:Key="strSubmit">_Submit</system:String>
+    <system:String x:Key="strShow">Sh_ow</system:String>
+
+</ResourceDictionary>

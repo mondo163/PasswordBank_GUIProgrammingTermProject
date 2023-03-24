@@ -1,0 +1,19 @@
+﻿<Application x:Class="PasswordBank.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PasswordBank"
+             xmlns:ninject ="clr-namespace:PasswordBank.Ninject"
+             StartupUri="Pages/PasswordBankMainPage.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ninject:ServiceLocator x:Key="ServiceLocator"/>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ResourceDictionaries\MainScreenStringEN.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries\MainPageStyles.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries\CreateAccountStringEn.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries\RecoveryPagesStringsEN.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries\PasswordDatabaseStringsEN.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

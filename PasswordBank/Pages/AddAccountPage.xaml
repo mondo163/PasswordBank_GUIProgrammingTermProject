@@ -1,0 +1,91 @@
+﻿<Window x:Class="PasswordBank.Pages.AddAccountPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PasswordBank.Pages"
+      mc:Ignorable="d"
+        DataContext="{Binding Path=AddAccountViewModel, Source={StaticResource ServiceLocator}}"
+      Title="Add Account" Width="385.19" Height="468.128">
+    <Window.Background>
+        <LinearGradientBrush StartPoint="1,0"
+                             EndPoint="0,1">
+            <GradientStop Color="LightSkyBlue" Offset="1"/>
+            <GradientStop Color="DarkSlateBlue" Offset="0"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="_Help"
+                      Command="{Binding HelpCommand}"/>
+        </Menu>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="{StaticResource passDatabaseURLEntry}"
+                   Style="{StaticResource stringTextblocks}"
+                   Margin="40,30,40,0"/>
+            <TextBox Grid.Row="1"
+                     Text="{Binding EnteredURL}"
+                     Style="{StaticResource stringUserEntryBoxes}"
+                     Margin="40,5,40,0"/>
+            <TextBlock Grid.Row="2"
+                   Style="{StaticResource stringTextblocks}"
+                   Text="{StaticResource passDatabaseNicknameEntry}"
+                   Margin="40,15,40,0"/>
+            <TextBox Grid.Row="3"
+                     Text="{Binding EnteredNickname}"
+                     Style="{StaticResource stringUserEntryBoxes}"
+                     Margin="40,5,40,0"/>
+            <TextBlock Grid.Row="4"
+                       Text="{StaticResource passDatabaseUsernameEntry}"
+                       Style="{StaticResource stringTextblocks}"
+                       Margin="40,15,40,0"/>
+            <TextBox Grid.Row="5"
+                     Text="{Binding EnteredUsername}"
+                     Style="{StaticResource stringUserEntryBoxes}"
+                     Margin="40,5,40,0"/>
+            <TextBlock Grid.Row="6"
+                       Style="{StaticResource stringTextblocks}"
+                       Text="{StaticResource passDatabasePasswordEntry}"
+                       Margin="40,15,40,0"/>
+            <TextBox Grid.Row="7"
+                     Text="{Binding EnteredPassword}"
+                     Style="{StaticResource stringUserEntryBoxes}"
+                     Margin="40,5,40,0"/>
+            <Grid Grid.Row="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Style="{StaticResource recoveryButtons}"
+                    Content="{StaticResource submitButtonString}"
+                    IsDefault="True"
+                    HorizontalAlignment="Right"
+                    Padding="30,10,30,10"
+                    Margin="0,20,5,20"
+                    Command="{Binding SubmitCommand}"/>
+                <Button Grid.Column="1"
+                    Style="{StaticResource recoveryButtons}"
+                    Content="{StaticResource cancelString}"
+                    HorizontalAlignment="Left"
+                    Padding="30,10,30,10"
+                    Margin="5,20,0,20"
+                    Command="{Binding CancelCommand}"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

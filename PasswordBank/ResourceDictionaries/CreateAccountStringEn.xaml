@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="emailEntryString">Enter an email:</system:String>
+    <system:String x:Key="fullNameString">Enter your full name:</system:String>
+    
+    <system:String x:Key="usernameEntryString" xml:space="preserve">Enter a Username: 
+    - Must be between 5 and 20 letters
+    - May only contain alphanumeric characters</system:String>
+
+    <system:String x:Key="passwordEntryString" xml:space="preserve">Enter a Password:
+    - Must be between 10 and 15 characters
+    - Must contain at least two numbers
+    - Must contain at least two uppercase letters
+    - Must contain at least two lowercase letters
+    - Must contain at least two of the following 
+      characters: !,#,@,$</system:String>
+
+    <system:String x:Key="passKeyEntryString" xml:space="preserve">Generate Passkey (Will Appear Below):</system:String>
+    <system:String x:Key="generatePasskeyButton" xml:space="preserve">_Generate</system:String>
+
+    <system:String x:Key="securityQuestionString">Enter your two security questions:</system:String>
+    <system:String x:Key="questionString" xml:space="preserve">  Question:</system:String>
+    <system:String x:Key="answerString" xml:space="preserve">  Answer:</system:String>
+    <system:String x:Key="saveString">_Save</system:String>
+    <system:String x:Key="cancelString">_Cancel</system:String>
+</ResourceDictionary>
